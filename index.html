@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Политика конфиденциальности приложения «БК Справочник» для Android.">
+<title>Политика конфиденциальности — БК Справочник</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Lora:wght@600;700&display=swap">
+<style>
+  /* Layout: one reading column with a fact card on top, like an app article. */
+  :root {
+    --bg: #101219;
+    --surface: #181b25;
+    --line: #2c3140;
+    --fg: #ebe7de;
+    --muted: #b4b2bb;
+    --accent: #d9a35c;
+    --ok: #85d0a2;
+    --display: "Lora", Georgia, "Times New Roman", serif;
+    --body: "Golos Text", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #f7f5f0; --surface: #ffffff; --line: #d3ccbd; --fg: #17191f;
+      --muted: #44464f; --accent: #8a5114; --ok: #21673f; color-scheme: light;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #f7f5f0; --surface: #ffffff; --line: #d3ccbd; --fg: #17191f;
+    --muted: #44464f; --accent: #8a5114; --ok: #21673f; color-scheme: light;
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 var(--body);
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  main { max-width: 42rem; margin: 0 auto; padding-block: 40px 64px; }
+  .eyebrow {
+    font-size: 12px; font-weight: 600; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--accent);
+  }
+  h1 {
+    font-family: var(--display); font-weight: 700; font-size: clamp(28px, 6vw, 38px);
+    line-height: 1.2; margin: 6px 0 8px; text-wrap: balance;
+  }
+  h2 {
+    font-family: var(--display); font-weight: 600; font-size: 21px;
+    line-height: 1.3; margin: 36px 0 8px; text-wrap: balance;
+  }
+  p, li { color: var(--fg); }
+  .lead { color: var(--muted); font-size: 17px; margin: 0; }
+  .meta { color: var(--muted); font-size: 14px; margin-top: 10px; }
+  ul { padding-left: 1.2em; margin: 8px 0; }
+  li { margin: 4px 0; }
+  li::marker { color: var(--accent); }
+  .facts {
+    margin-top: 28px; border: 1px solid var(--line); border-radius: 14px;
+    background: var(--surface); display: grid;
+  }
+  .fact {
+    display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px;
+    padding: 12px 16px; border-bottom: 1px solid var(--line); align-items: baseline;
+  }
+  .fact:last-child { border-bottom: 0; }
+  .fact span:first-child { color: var(--muted); min-width: 0; }
+  .fact b { font-weight: 600; text-align: right; }
+  .fact b.ok { color: var(--ok); }
+  .mail {
+    display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center;
+    margin-top: 10px; padding: 12px 16px; border: 1px solid var(--line);
+    border-radius: 14px; background: var(--surface);
+  }
+  .mail code {
+    font: 600 16px/1.4 var(--body); user-select: all; word-break: break-all;
+  }
+  button {
+    font: 500 14px var(--body); color: var(--accent); background: transparent;
+    border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; cursor: pointer;
+  }
+  button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0 0; }
+  .en { color: var(--muted); font-size: 15px; }
+  .en h2 { color: var(--fg); font-size: 18px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Политика конфиденциальности</div>
+  <h1>БК Справочник</h1>
+  <p class="lead">Неофициальный справочник по игре «Бойцовский клуб» (combats.com) для Android.
+    Приложение не собирает персональные данные и работает без интернета.</p>
+  <p class="meta">Действует с 10 ноября 2026 года.</p>
+
+  <div class="facts" role="list" aria-label="Коротко">
+    <div class="fact" role="listitem"><span>Сбор персональных данных</span><b class="ok">нет</b></div>
+    <div class="fact" role="listitem"><span>Учётные записи и вход</span><b class="ok">нет</b></div>
+    <div class="fact" role="listitem"><span>Реклама, аналитика, трекеры</span><b class="ok">нет</b></div>
+    <div class="fact" role="listitem"><span>Передача данных третьим лицам</span><b class="ok">нет</b></div>
+    <div class="fact" role="listitem"><span>Покупки</span><b>через Google Play</b></div>
+  </div>
+
+  <h2>Что хранится на устройстве</h2>
+  <p>Всё, что приложение запоминает, лежит только в его памяти на вашем телефоне и никуда не отправляется:</p>
+  <ul>
+    <li>закладки («Избранное»), история просмотров и место, где вы остановились в статье;</li>
+    <li>последние поисковые запросы;</li>
+    <li>настройки: тема оформления, размер текста, вид главного экрана;</li>
+    <li>отметка о том, что «БК Справочник+» куплен, — чтобы он работал без интернета.</li>
+  </ul>
+  <p>Статьи, карты и маршруты встроены в приложение и не загружаются из сети.</p>
+
+  <h2>Покупка «БК Справочник+»</h2>
+  <p>«БК Справочник+» — необязательная разовая покупка. Её полностью обрабатывает Google Play:
+    приложение не видит и не хранит ваши платёжные данные, номер карты или адрес.
+    Чтобы проверить и восстановить покупку, приложение запрашивает у Google Play список ваших покупок
+    в этом приложении. Эти данные обрабатывает Google по
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">политике конфиденциальности Google</a>.</p>
+
+  <h2>Если вы напишете редактору</h2>
+  <p>В приложении есть адрес электронной почты для сообщений об ошибках. Если вы напишете,
+    ваш адрес и текст письма будут использованы только для ответа и исправления справочника
+    и не будут переданы другим.</p>
+
+  <h2>Разрешения</h2>
+  <ul>
+    <li><b>Покупки в Google Play</b> — для «БК Справочник+».</li>
+  </ul>
+  <p>Приложение не запрашивает доступ к контактам, местоположению, камере, микрофону или файлам.</p>
+
+  <h2>Как удалить данные</h2>
+  <p>Удалите приложение или очистите его данные в настройках Android
+    (Приложения → БК Справочник → Хранилище → Очистить данные). История покупок хранится
+    в вашем аккаунте Google Play и управляется там.</p>
+
+  <h2>Дети</h2>
+  <p>Приложение не предназначено специально для детей и ни у кого не собирает персональные данные.</p>
+
+  <h2>Изменения</h2>
+  <p>Если политика изменится, новая версия появится на этой странице с новой датой.</p>
+
+  <h2>Связаться</h2>
+  <p>Вопросы о конфиденциальности — по адресу:</p>
+  <div class="mail">
+    <code id="email">aleksandrbrukvin@gmail.com</code>
+    <button type="button" id="copy">Скопировать</button>
+  </div>
+
+  <hr>
+  <section class="en" lang="en">
+    <h2>Privacy policy (English summary)</h2>
+    <p>BK Spravochnik is an unofficial offline reference app for the game «Бойцовский клуб» (combats.com).
+      It collects no personal data, has no accounts, ads, analytics or trackers, and shares nothing with
+      third parties. Bookmarks, history, recent searches, settings and the purchase flag are stored only on
+      the device. The optional one-time purchase «БК Справочник+» is processed entirely by Google Play; the
+      app only queries Google Play for its own purchases (see the
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>).
+      Uninstalling the app removes all its data. Contact: aleksandrbrukvin@gmail.com. Effective 10 November 2026.</p>
+  </section>
+</main>
+
+<script>
+  document.getElementById('copy').addEventListener('click', function () {
+    var btn = this;
+    var text = document.getElementById('email').textContent;
+    function done(label) { btn.textContent = label; setTimeout(function () { btn.textContent = 'Скопировать'; }, 1600); }
+    function select() {
+      var r = document.createRange();
+      r.selectNodeContents(document.getElementById('email'));
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      done('Выделено');
+    }
+    try {
+      navigator.clipboard.writeText(text).then(function () { done('Скопировано'); }, select);
+    } catch (e) { select(); }
+  });
+</script>
+</body>
+</html>
